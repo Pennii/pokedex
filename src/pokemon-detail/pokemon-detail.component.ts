@@ -11,7 +11,7 @@ export class PokemonDetailComponent {
 
   @Input() pokemon: string = '';
   @Input() imagen: string = '';
-  @Input() habilities: Array<string> = [];
+  @Input() habilities: string = '';
 
   @Output() clickName = new EventEmitter<string>();
 }

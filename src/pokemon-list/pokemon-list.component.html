@@ -1,7 +1,11 @@
-@for (pokemon of pokemons; track $index) {
-    <app-pokemon-detail [pokemon]="pokemon.name"
-    [habilities]="pokemon.habilities"
-    [imagen]="pokemon.src"
-    (clickName)="clickName($event)"
-    class="contenedor"/>
-}
+<app-paginador (indexActual)="actualizarIndex($event)"/>
+<div id="lista">
+    @for (pokemon of pokemons[index]; track $index) {
+        <app-pokemon-detail [pokemon]="pokemon.name"
+        [habilities]="pokemon.habilities"
+        [imagen]="pokemon.src"
+        (clickName)="clickName($event)"
+        class="contenedor {{pokemon.tipo}}"/>
+    }
+</div>
+
