@@ -21,10 +21,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     height: 50%;
+    background: url('https://zeus.vwu.edu/~tjpepper/Pokedex/Images/PokedexClosed.png');
   }
-  .fuego{
+  /*.fuego{
     background-color: var(--fuego);
   }
   .agua{
@@ -75,7 +75,7 @@
   .fantasma{
     background-color: var(--fantasma);
   }
-
+*/
 #lista{
   display: flex;
   justify-content: space-evenly;

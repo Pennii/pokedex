@@ -1,4 +1,16 @@
-<app-paginador (indexActual)="actualizarIndex($event)"/>
+<app-paginador (nextPage)="nextPage()" (previousPage)="prevPage()"/>
+<div id="lista">
+@for (pokemon of pokemons; track $index) {
+
+            <app-pokemon-detail [pokemon]="pokemon.name"
+            [habilities]="pokemon.habilities"
+            [imagen]="'https://img.pokemondb.net/sprites/black-white/normal/'+pokemon.name+'.png'"
+            class="contenedor {{pokemon.tipo}}"/>
+        
+}
+</div>
+
+<!-- <app-paginador (indexActual)="actualizarIndex($event)"/>
 <div id="lista">
     @for (pokemon of pokemons[index]; track $index) {
         <app-pokemon-detail [pokemon]="pokemon.name"
@@ -7,5 +19,6 @@
         (clickName)="clickName($event)"
         class="contenedor {{pokemon.tipo}}"/>
     }
-</div>
+</div> -->
+
 

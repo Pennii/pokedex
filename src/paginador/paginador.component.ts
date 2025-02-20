@@ -9,6 +9,8 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
 })
 export class PaginadorComponent {
   @Output() indexActual = new EventEmitter<number>();
+  @Output() nextPage = new EventEmitter<void>();
+  @Output() previousPage = new EventEmitter<void>();
 
   index: number = 0;
   restar(){
