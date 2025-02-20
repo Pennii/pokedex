@@ -1,12 +1,93 @@
 :host {
-  --rojo : red;
+  --fuego : #ff7f00;
+  --planta : #99ff66;
+  --agua : #b0e2ff;
+  --electrico : #ffd700;
+  --hielo : blue;
+  --tierra : #deb887;
+  --normal : #ddccaa;
+  --acero : grey;
+  --sinisestro : black;
+  --lucha : orange;
+  --dragon : purple;
+  --psiquico : pink;
+  --hada : pink;
+  --bicho : #A8E038;
+  --veneno : #cc88bb;
+  --volador : #baaaff;
+  --fantasma : black;
   .contenedor{
-    background-color: var(--rojo);
-    width: 15%;
+    width: 20%;
     align-items: center;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    height: 50%;
   }
+  .fuego{
+    background-color: var(--fuego);
+  }
+  .agua{
+    background-color: var(--agua);
+  }
+  .planta{
+    background-color: var(--planta);
+  }
+  .electrico{
+    background-color: var(--electrico);
+  }
+  .hielo{
+    background-color: var(--hielo);
+  }
+  .tierra{
+    background-color: var(--tierra);
+  }
+  .normal{
+    background-color: var(--normal);
+  }
+  .acero{
+    background-color: var(--acero);
+  }
+  .siniestro{
+    background-color: var(--siniestro);
+  }
+  .lucha{
+    background-color: var(--lucha);
+  }
+  .dragon{
+    background-color: var(--dragon);
+  }
+  .psiquico{
+    background-color: var(--psiquico);
+  }
+  .hada{
+    background-color: var(--hada);
+  }
+  .bicho{
+    background-color: var(--bicho);
+  }
+  .veneno{
+    background-color: var(--veneno);
+  }
+  .volador{
+    background-color: var(--volador);
+  }
+  .fantasma{
+    background-color: var(--fantasma);
+  }
+
+#lista{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
+  height: 800px;
+}
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0;
+ padding: 0;
 }
