@@ -8,19 +8,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angul
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PaginadorComponent {
-  @Output() indexActual = new EventEmitter<number>();
   @Output() nextPage = new EventEmitter<void>();
   @Output() previousPage = new EventEmitter<void>();
 
-  index: number = 0;
-  restar(){
-    if (this.index > 0 ) {
-      this.index--;
-    }
-    this.indexActual.emit(this.index);
-  }
-  aumentar(){
-    this.index++;
-    this.indexActual.emit(this.index);
-  }
  }

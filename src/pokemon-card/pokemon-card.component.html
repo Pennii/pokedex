@@ -1,4 +1,3 @@
 <h1>{{pokemon}}</h1>
-<p>{{habilities}}</p>
 <img [src]="imagen" [alt]="'imagen de ' + pokemon" height="200" width="200">
-<!--<button (click)="clickName.emit('boton clickado')">Boton</button>-->
+<button (click)="clickName.emit(pokemon)">Boton</button>

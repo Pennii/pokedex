@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  overflow: hidden;
+
+  img{
+    position: relative;
+    top: 0px;
+    transition: 0.3s ease;
+  }
+
+}
+:host(:hover) img{
+  top: -20px;
+}
