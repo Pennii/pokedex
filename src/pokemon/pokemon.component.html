@@ -1,6 +1,7 @@
 <!-- <pre>{{pokemon | json}}</pre> -->
 @if (pokemon) {
     <img [src]="pokemon.sprites.front_default" alt="">
+    <h1>{{pokemon.pokedex.pokemon_entries}}</h1>
 }@else {
     <div id="loading">
         <div class="pokeball" id="normal"></div>

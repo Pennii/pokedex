@@ -1,11 +1,14 @@
 :host {
   display: block;
   overflow: hidden;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   img{
     position: relative;
-    top: 0px;
     transition: 0.3s ease;
+    top: 0px;
   }
 
 }

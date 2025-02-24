@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonServiceService } from '../pokemon-service.service';
 import { JsonPipe } from '@angular/common';
@@ -14,6 +14,7 @@ export class PokemonComponent {
   private pokemonService = inject(PokemonServiceService);
   pokemonName: string | null = null;
   pokemon?: any;
+  @Input() nombreBuscar: string = '';
 
   constructor (){
     this.pokemonName = this.router.snapshot.params["pokemonId"]

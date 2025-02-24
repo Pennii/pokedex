@@ -12,6 +12,9 @@ export class PokemonServiceService {
   getPokemonList():Observable<any>{
     return this.http.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=8');
   }
+  getPokemonListBuscador():Observable<any>{
+    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=8');
+  }
 
   changePage(url: string): Observable<any>{
     return this.http.get(url);
