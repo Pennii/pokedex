@@ -48,11 +48,18 @@ export class PokemonListComponent {
 
   buscar(pokemon: string) {
     this.nombreBuscar = pokemon;
-    this.pokemonService.getPokemonListBuscador().subscribe((data) => {
-      this.pages = { next: data.next, previous: data.previous };
-      this.pokemons = data.results;
-    })
-    console.log(pokemon)
+    if (pokemon != '') {
+      this.pokemonService.getPokemonListBuscador().subscribe((data) => {
+        this.pages = { next: data.next, previous: data.previous };
+        this.pokemons = data.results;
+      })
+    } else {
+      this.pokemonService.getPokemonList().subscribe((data) => {
+        this.pages = { next: data.next, previous: data.previous };
+        this.pokemons = data.results;
+      })
+    }
+
   }
 
   /* actualizarIndex(nuevo: number) {

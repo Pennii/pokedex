@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/585/452/950/pokemon-pokeballs-anime-minimalism-wallpaper-thumb.jpg');
+   /*  background-image: url('https://c4.wallpaperflare.com/wallpaper/585/452/950/pokemon-pokeballs-anime-minimalism-wallpaper-thumb.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
+    background-repeat: no-repeat; */
+    height: 90vh;
+    background: rgb(250,5,5);
+background: linear-gradient(90deg, rgba(250,5,5,1) 62%, rgba(0,0,0,1) 63%, rgba(255,255,255,1) 69%);
 }

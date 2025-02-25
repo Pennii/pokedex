@@ -1,5 +1,7 @@
 <app-buscador (buscar)="buscar($event)"/>
-<app-paginador (nextPage)="nextPage()" (previousPage)="prevPage()"/>
+@if (!nombreBuscar) {
+    <app-paginador (nextPage)="nextPage()" (previousPage)="prevPage()"/>
+}
 <div id="lista">
 @for (pokemon of pokemons; track $index) {
     @if (nombreBuscar == '' || pokemon.name.includes(nombreBuscar)) {
@@ -10,16 +12,3 @@
     }   
 }
 </div>
-
-<!-- <app-paginador (indexActual)="actualizarIndex($event)"/>
-<div id="lista">
-    @for (pokemon of pokemons[index]; track $index) {
-        <app-pokemon-detail [pokemon]="pokemon.name"
-        [habilities]="pokemon.habilities"
-        [imagen]="pokemon.src"
-        (clickName)="clickName($event)"
-        class="contenedor {{pokemon.tipo}}"/>
-    }
-</div> -->
-
-
